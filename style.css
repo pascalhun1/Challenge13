@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+body {
+    background-color: #f3e5d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    color: #66625f;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    padding: 30px 40px;
+    img {
+        border-radius: 15px;
+    }
+}
+
+.preparation {
+    background-color: #fcf3f8;
+    border-radius: 10px;
+    padding: 20px 20px ;
+     ul {
+      padding-left: 25px;
+     }
+     h3 {
+      padding: 0 10px 10px 6px;
+      color: #9e5476;
+     }
+     span {
+      font-weight: 600;
+     }
+}
+
+.ingredients {
+  padding: 0 0 20px 20px ;
+}
+
+.instructions {
+  li {
+    padding-bottom: 5px;
+   
+    
+  }
+   li:last-child  {
+    padding-bottom: 30px;
+  }
+  span {
+    font-weight: 600;
+    color: #5a5551;
+  }
+}
+
+.nutrition {
+
+  p {
+    padding: 0 0 30px 0;
+  }
+}
+
+.nutrition-info {
+display: flex;
+justify-content: center;
+
+
+}
+
+.nutrition-card {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  span {
+    padding: 5px 0 5px 20px;
+  }
+}
+
+.nutrition-card-spec {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  span {
+    padding: 5px 0 5px 25px;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 0 30px 0;
+  h1 {
+    color: #2c2b29;
+  }
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+
+ul, ol {
+padding: 0 15px;
+}
+
+li {
+  padding: 2px 8px;
+ }
+
+ .color {
+  color: #7b472f;
+ }
+
+h1, h2, h3 {
+  font-family: 'Young Serif', serif;
+}
+ 
+ol { 
+  list-style: none; 
+  counter-reset: num;
+  
+} 
+
+ol li { 
+  counter-increment: num; 
+  
+} 
+
+ol li::before { 
+  content: counter(num) ". "; 
+  color: #6d5145; 
+  font-weight: bolder;
+  padding-right: 10px;
+   font-size: 17px;
+} 
+
